@@ -2,13 +2,15 @@
 
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg?logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458.svg?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243.svg?logo=numpy&logoColor=white)](https://numpy.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c.svg)](https://matplotlib.org/)
-[![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-blueviolet.svg)](https://seaborn.pydata.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Anaconda](https://img.shields.io/badge/Conda-Environment-44A833?style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c?style=for-the-badge&logo=plotly&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-Statistical_Plots-388E3C?style=for-the-badge&logo=scipy&logoColor=white)](https://seaborn.pydata.org/)
+
+<br/>
 
 **Hands-on Labs, Exploratory Data Analysis, Machine Learning Foundations & Notebooks**  
 *Conducted under the NAVTTC (National Vocational and Technical Training Commission) AI Training Initiative & Huawei Certification Program.*
@@ -23,16 +25,16 @@
 - [📂 Repository Structure](#-repository-structure)
 - [🔬 Modules & Lab Details](#-modules--lab-details)
 - [📊 Datasets](#-datasets)
-- [⚙️ Setup & Installation](#️-setup--installation)
+- [⚙️ Setup & Installation (Anaconda / Conda)](#️-setup--installation-anaconda--conda)
 - [🚀 How to Run](#-how-to-run)
-- [👤 Author](#-author)
+- [👤 Connect With Me](#-connect-with-me)
 - [📜 License](#-license)
 
 ---
 
 ## 📖 About the Program
 
-This repository contains all the practical labs, coursework, exploratory data analysis (EDA), and machine learning preparation exercises developed during the **HCCDA - AI (Huawei Certified Developer Associate - Artificial Intelligence)** program facilitated by **NAVTTC**.
+This repository contains all practical labs, coursework, exploratory data analysis (EDA), and machine learning preparation exercises developed during the **HCCDA - AI (Huawei Certified Developer Associate - Artificial Intelligence)** program facilitated by **NAVTTC**.
 
 The curriculum is designed to build strong foundations in:
 - **Core Python Programming for Data Science**
@@ -112,9 +114,9 @@ HCCDA_AI_NAVTTC/
 
 ---
 
-## ⚙️ Setup & Installation
+## ⚙️ Setup & Installation (Anaconda / Conda)
 
-Follow these steps to run the notebooks locally:
+Follow these steps to set up the environment and run the notebooks:
 
 ### 1. Clone the repository
 ```bash
@@ -122,19 +124,20 @@ git clone https://github.com/Mushtaq0054/HCCDA_AI_NAVTTC.git
 cd HCCDA_AI_NAVTTC
 ```
 
-### 2. Create a virtual environment (Recommended)
-```bash
-# Windows (PowerShell / Command Prompt)
-python -m venv venv
-venv\Scripts\activate
+### 2. Create & Activate Conda Environment
+Open **Anaconda Prompt** or terminal and run:
 
-# macOS / Linux
-python3 -m venv venv
-source venv/bin/activate
+```bash
+# Create a new conda environment with Python 3.12
+conda create -n hccda_ai python=3.12 -y
+
+# Activate the conda environment
+conda activate hccda_ai
 ```
 
-### 3. Install required packages
+### 3. Install Dependencies
 ```bash
+# Upgrade pip and install required packages
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
@@ -143,20 +146,27 @@ pip install -r requirements.txt
 
 ## 🚀 How to Run
 
-Launch Jupyter Notebook or Jupyter Lab in your browser:
+Launch Jupyter Notebook inside your activated Conda environment:
 
 ```bash
 jupyter notebook
 ```
-Or open the workspace in **Visual Studio Code** with the **Jupyter Extension** enabled to run the `.ipynb` files interactively.
+Or open the project folder in **Visual Studio Code**, select the `hccda_ai (Python 3.12)` kernel in the top-right corner, and run the `.ipynb` notebooks interactively.
 
 ---
 
-## 👤 Author
+## 👤 Connect With Me
 
-- **Mushtaq Ahmad Madni**
-- **GitHub**: [@Mushtaq0054](https://github.com/Mushtaq0054)
-- **Program**: HCCDA - AI (Huawei Certified Developer Associate - AI) with NAVTTC
+<div align="center">
+
+### **Mushtaq Ahmad Madni**
+*AI & Data Science Enthusiast | HCCDA - AI Trainee (NAVTTC)*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mushtaq_Madni-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mushtaq-madni)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Website-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://mushtaq-portfolio-pi.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Mushtaq0054-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mushtaq0054)
+
+</div>
 
 ---
 
