@@ -61,19 +61,22 @@ The curriculum is designed to build strong foundations in:
 ```text
 HCCDA_AI_NAVTTC/
 ├── datasets/
-│   ├── IMDB-Movie-Data.csv          # 1,000 top movies dataset for rating & revenue analysis
-│   └── titanic_dataset.xlsx         # Classic Titanic passenger survival dataset
-├── Copy_of_PythonforDS.ipynb        # Comprehensive Python for Data Science guide & exercises
-├── EDA_Titanic_dataset.ipynb        # Exploratory Data Analysis on Titanic survival demographics
-├── HCCDA-AI-Day-2-Lab-1.ipynb       # HCCDA-AI Day 2 Practical Lab on AI workflows
-├── data_visualisation.ipynb         # Data Visualization masterclass (Matplotlib & Seaborn)
-├── list_concat.ipynb                # Python sequence & list manipulation techniques
-├── numpy_2d_array.ipynb             # 2D Array operations, slicing, masking & broadcasting
-├── numpy_3d_array.ipynb             # 3D Array / Tensor structures and operations
-├── week_2.py                        # Week 2 introductory Python script
-├── requirements.txt                 # Project dependencies
-├── .gitignore                       # Standard Git ignore rules
-└── README.md                        # Documentation & project guide
+│   ├── IMDB-Movie-Data.csv                             # 1,000 top movies dataset for rating & revenue analysis
+│   └── titanic_dataset.xlsx                            # Classic Titanic passenger survival dataset
+├── Copy_of_PythonforDS.ipynb                           # Comprehensive Python for Data Science guide & exercises
+├── EDA_Titanic_dataset.ipynb                           # Exploratory Data Analysis on Titanic survival demographics
+├── HCCDA-AI-Day-2-Lab-1.ipynb                          # HCCDA-AI Day 2 Practical Lab on AI workflows
+├── complete_numpy_course_for_beginners_complete.ipynb  # Complete beginner-to-advanced NumPy course
+├── data_visualisation.ipynb                            # Data Visualization masterclass (Matplotlib & Seaborn)
+├── list_concat.ipynb                                   # Python sequence & list manipulation techniques
+├── numpy_2d_array.ipynb                                # 2D Array operations, slicing, masking & broadcasting
+├── numpy_3d_array.ipynb                                # 3D Array / Tensor structures and operations
+├── one_to_hundred.csv                                  # Sample generated numerical dataset (CSV)
+├── one_to_hundred.npy                                  # NumPy binary array file (.npy format)
+├── week_2.py                                           # Week 2 introductory Python script
+├── requirements.txt                                    # Project dependencies
+├── .gitignore                                          # Standard Git ignore rules
+└── README.md                                           # Documentation & project guide
 ```
 
 ---
@@ -85,9 +88,11 @@ HCCDA_AI_NAVTTC/
 - Control flow, list comprehensions, concatenation, and functions.
 - Transitioning from pure Python to data science libraries.
 
-### 2. 🔢 Scientific Computing with NumPy (`numpy_2d_array.ipynb`, `numpy_3d_array.ipynb`)
+### 2. 🔢 Scientific Computing with NumPy (`complete_numpy_course_for_beginners_complete.ipynb`, `numpy_2d_array.ipynb`, `numpy_3d_array.ipynb`)
+- **NumPy Fundamentals**: Comprehensive beginner to advanced masterclass covering array creation, math operations, and vectorized computation.
 - **2D Arrays**: Matrix representations, row/column slicing, axis-wise aggregations, boolean indexing.
 - **3D Arrays**: High-dimensional array manipulation, reshaping, block operations, and tensor foundations.
+- **Array Persistence**: Saving and loading binary (`.npy`) and tabular (`.csv`) data (`one_to_hundred.csv`, `one_to_hundred.npy`).
 
 ### 3. 🚢 Exploratory Data Analysis (EDA) (`EDA_Titanic_dataset.ipynb`)
 - Data cleaning: handling missing values (`Age`, `Cabin`, `Embarked`).
