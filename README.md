@@ -5,6 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Anaconda](https://img.shields.io/badge/Conda-Environment-44A833?style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c?style=for-the-badge&logo=plotly&logoColor=white)](https://matplotlib.org/)
@@ -12,7 +13,7 @@
 
 <br/>
 
-**Hands-on Labs, Exploratory Data Analysis, Machine Learning Foundations & Notebooks**  
+**Hands-on Labs, Exploratory Data Analysis, Machine Learning Algorithms & Applied AI Projects**  
 *Conducted under the NAVTTC (National Vocational and Technical Training Commission) AI Training Initiative & Huawei Certification Program.*
 
 </div>
@@ -23,7 +24,7 @@
 - [📖 About the Program](#-about-the-program)
 - [🎯 Learning Objectives](#-learning-objectives)
 - [📂 Repository Structure](#-repository-structure)
-- [🔬 Modules & Lab Details](#-modules--lab-details)
+- [🔬 Modules & Project Highlights](#-modules--project-highlights)
 - [📊 Datasets](#-datasets)
 - [⚙️ Setup & Installation (Anaconda / Conda)](#️-setup--installation-anaconda--conda)
 - [🚀 How to Run](#-how-to-run)
@@ -34,25 +35,27 @@
 
 ## 📖 About the Program
 
-This repository contains all practical labs, coursework, exploratory data analysis (EDA), and machine learning preparation exercises developed during the **HCCDA - AI (Huawei Certified Developer Associate - Artificial Intelligence)** program facilitated by **NAVTTC**.
+This repository contains all practical labs, machine learning algorithms, exploratory data analysis (EDA), data engineering pipelines, and Huawei Cloud AI preparation exercises developed during the **HCCDA - AI (Huawei Certified Developer Associate - Artificial Intelligence)** program facilitated by **NAVTTC**.
 
-The curriculum is designed to build strong foundations in:
-- **Core Python Programming for Data Science**
-- **Multidimensional Array Operations with NumPy**
-- **Data Wrangling & Analysis with Pandas**
-- **Statistical Data Visualization with Matplotlib & Seaborn**
-- **Exploratory Data Analysis (EDA) on Real-World Datasets**
-- **Huawei Cloud AI Services & Lab Practicals**
+The curriculum is designed to build strong expertise in:
+- **Core Python Programming for Scientific Computing**
+- **Multidimensional Array Operations & Vectorization with NumPy**
+- **Data Wrangling & Statistical Analysis with Pandas**
+- **Exploratory Data Analysis (EDA) & Data Visualization (Matplotlib / Seaborn)**
+- **Supervised Machine Learning (Linear Regression, Classification Models with Scikit-Learn)**
+- **Demand Forecasting & Data Preprocessing Pipelines**
+- **Huawei Cloud AI Services & ModelArts Integration**
 
 ---
 
 ## 🎯 Learning Objectives
 
-- [x] Master Python fundamentals and data structures for scientific workflows.
-- [x] Perform multidimensional array manipulations, slicing, vectorization, and tensor operations in NumPy (2D & 3D arrays).
-- [x] Conduct end-to-end Exploratory Data Analysis (EDA) on structured datasets (e.g., Titanic, IMDB Movie Data).
-- [x] Design insightful statistical graphs, correlation heatmaps, distribution plots, and relational visualizations using Seaborn and Matplotlib.
-- [x] Understand ModelArts and Huawei Cloud AI development paradigms through guided lab exercises.
+- [x] Master Python data structures, algorithms, and numerical computing workflows.
+- [x] Implement mathematical operations, matrix broadcasting, 2D/3D tensor manipulation, and persistence with NumPy.
+- [x] Perform end-to-end Exploratory Data Analysis on real-world datasets (Titanic, Iris, IMDB, Greenleaf Retail).
+- [x] Build and evaluate **Supervised Machine Learning Models** (Linear Regression from scratch & Scikit-Learn, Iris Classification).
+- [x] Develop modular data preprocessing and splitting pipelines (`train.csv`, `val.csv`, `test.csv`) with automated tests.
+- [x] Gain hands-on practice with Huawei Cloud AI tools and lab environments.
 
 ---
 
@@ -60,17 +63,37 @@ The curriculum is designed to build strong foundations in:
 
 ```text
 HCCDA_AI_NAVTTC/
-├── datasets/
-│   ├── IMDB-Movie-Data.csv                             # 1,000 top movies dataset for rating & revenue analysis
-│   └── titanic_dataset.xlsx                            # Classic Titanic passenger survival dataset
-├── Copy_of_PythonforDS.ipynb                           # Comprehensive Python for Data Science guide & exercises
-├── EDA_Titanic_dataset.ipynb                           # Exploratory Data Analysis on Titanic survival demographics
+├── 1.Linear Regression Model.ipynb                     # Supervised ML: Linear Regression (scratch & scikit-learn)
+├── Copy_of_PythonforDS.ipynb                           # Comprehensive Python for Data Science guide
 ├── HCCDA-AI-Day-2-Lab-1.ipynb                          # HCCDA-AI Day 2 Practical Lab on AI workflows
+├── Iris Dataset/                                       # Iris Flower Classification & EDA
+│   ├── iris_EDA_with_Training.ipynb                    # End-to-end EDA and model training pipeline
+│   └── iris_model.ipynb                                # Classification model development
+├── Titanic Dataset/                                    # Titanic Survival Analysis Collection
+│   ├── data/
+│   │   ├── train.csv                                   # Titanic training dataset
+│   │   └── test.csv                                    # Titanic test dataset
+│   ├── EDA_Titanic_dataset.ipynb                       # Comprehensive Titanic EDA notebook
+│   ├── Titanic_EDA.ipynb                               # Demographic survival rate breakdown
+│   ├── data_visualisation.ipynb                        # Statistical visualization masterclass
+│   ├── sir_lec_titanic.ipynb                           # Instructor lecture notes & lab walkthrough
+│   └── titanic eda.ipynb                               # Alternative exploratory patterns & insights
+├── greenleaf-perishable-demand-forecast/               # Retail Demand Forecasting Project
+│   ├── ipynb_folder/
+│   │   ├── preprocessing.ipynb                         # Data preprocessing notebook
+│   │   ├── test_preprocessing.py                       # Unit testing script for preprocessing logic
+│   │   ├── raw_data/sales_data.csv                     # Raw retail sales dataset
+│   │   └── split_data/                                 # Stratified split partitions (train, val, test)
+│   └── py_folder/
+│       ├── preprocessing.py                            # Production-ready data cleaning script
+│       └── test_preprocessing.py                       # Test runner
+├── datasets/
+│   ├── IMDB-Movie-Data.csv                             # 1,000 top movies dataset (rating & revenue)
+│   └── titanic_dataset.xlsx                            # Classic Titanic Excel dataset
 ├── complete_numpy_course_for_beginners_complete.ipynb  # Complete beginner-to-advanced NumPy course
-├── data_visualisation.ipynb                            # Data Visualization masterclass (Matplotlib & Seaborn)
-├── list_concat.ipynb                                   # Python sequence & list manipulation techniques
-├── numpy_2d_array.ipynb                                # 2D Array operations, slicing, masking & broadcasting
+├── numpy_2d_array.ipynb                                # 2D Array operations, slicing & masking
 ├── numpy_3d_array.ipynb                                # 3D Array / Tensor structures and operations
+├── list_concat.ipynb                                   # Python sequence manipulation techniques
 ├── one_to_hundred.csv                                  # Sample generated numerical dataset (CSV)
 ├── one_to_hundred.npy                                  # NumPy binary array file (.npy format)
 ├── week_2.py                                           # Week 2 introductory Python script
@@ -81,41 +104,40 @@ HCCDA_AI_NAVTTC/
 
 ---
 
-## 🔬 Modules & Lab Details
+## 🔬 Modules & Project Highlights
 
-### 1. 🐍 Python for Data Science (`Copy_of_PythonforDS.ipynb`, `list_concat.ipynb`, `week_2.py`)
-- Python data types, strings, lists, tuples, and dictionaries.
-- Control flow, list comprehensions, concatenation, and functions.
-- Transitioning from pure Python to data science libraries.
+### 1. 🤖 Supervised Machine Learning (`1.Linear Regression Model.ipynb`)
+- **Linear Regression from Scratch**: Cost function ($J(\theta)$), gradient descent intuition, and manual optimization.
+- **Scikit-Learn Implementation**: Training `LinearRegression` on continuous features (House Price Prediction).
+- **Model Evaluation**: Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and $R^2$ Score.
 
-### 2. 🔢 Scientific Computing with NumPy (`complete_numpy_course_for_beginners_complete.ipynb`, `numpy_2d_array.ipynb`, `numpy_3d_array.ipynb`)
-- **NumPy Fundamentals**: Comprehensive beginner to advanced masterclass covering array creation, math operations, and vectorized computation.
-- **2D Arrays**: Matrix representations, row/column slicing, axis-wise aggregations, boolean indexing.
-- **3D Arrays**: High-dimensional array manipulation, reshaping, block operations, and tensor foundations.
-- **Array Persistence**: Saving and loading binary (`.npy`) and tabular (`.csv`) data (`one_to_hundred.csv`, `one_to_hundred.npy`).
+### 2. 🌸 Iris Flower Classification (`Iris Dataset/`)
+- Multiclass classification on the classic Fisher's Iris dataset (`Sepal/Petal Length & Width`).
+- Feature distributions, pair plots, model training, accuracy evaluation, and decision boundaries.
 
-### 3. 🚢 Exploratory Data Analysis (EDA) (`EDA_Titanic_dataset.ipynb`)
-- Data cleaning: handling missing values (`Age`, `Cabin`, `Embarked`).
-- Demographic analysis: survival rates grouped by `Pclass`, `Sex`, `Age`, and `Fare`.
-- Statistical insights into feature correlations.
+### 3. 🚢 Comprehensive Titanic Survival Analysis (`Titanic Dataset/`)
+- Data cleaning & imputation: handling missing values (`Age`, `Cabin`, `Embarked`).
+- Deep-dive demographics: survival trends across `Pclass`, `Sex`, `Fare`, `SibSp`, and `Parch`.
+- Visualizations: Correlation heatmaps, survival histograms, violin and box plots.
 
-### 4. 📈 Data Visualization (`data_visualisation.ipynb`)
-- **Matplotlib**: Line charts, bar plots, histograms, and scatter plots.
-- **Seaborn**: Heatmaps, pair plots, box plots, violin plots, and categorical plots.
-- Customizing aesthetics, color palettes, and plot layouts for presentations.
+### 4. 🛒 Demand Forecasting Pipeline (`greenleaf-perishable-demand-forecast/`)
+- Modular data pipeline: parsing raw time-series/retail transaction data (`sales_data.csv`).
+- Data partitioning: automated generation of `train.csv`, `val.csv`, and `test.csv`.
+- Test-driven validation: automated unit tests via `test_preprocessing.py`.
 
-### 5. ☁️ HCCDA - AI Practicals (`HCCDA-AI-Day-2-Lab-1.ipynb`)
-- Practical exercises aligned with Huawei Cloud AI Associate certification.
-- Hands-on implementation of AI fundamentals and pipeline preparation.
+### 5. 🔢 NumPy & Python Foundations (`complete_numpy_course_for_beginners_complete.ipynb`, etc.)
+- In-depth coverage from basic syntax to 2D/3D tensor reshaping, masking, broadcasting, and binary file I/O (`.npy`, `.csv`).
 
 ---
 
 ## 📊 Datasets
 
-| Dataset | Format | Description |
-|---|---|---|
-| **Titanic Dataset** | `.xlsx` | Contains passenger demographic info (age, gender, ticket class, fare) and survival outcomes from the Titanic disaster. |
-| **IMDB Movie Data** | `.csv` | 1,000 popular movies from 2006 to 2016 detailing title, genre, director, actors, year, runtime, rating, votes, revenue, and Metascore. |
+| Dataset | Location | Format | Description |
+|---|---|---|---|
+| **Titanic Dataset** | `Titanic Dataset/data/` | `.csv`, `.xlsx` | Passenger demographics, ticket class, and survival outcome. |
+| **Iris Dataset** | `Iris Dataset/` | In-memory / `.csv` | 150 iris flower instances with 4 morphological features across 3 species. |
+| **Sales Demand Data** | `greenleaf-perishable-demand-forecast/` | `.csv` | Retail sales transactions for demand forecasting and inventory modeling. |
+| **IMDB Movie Data** | `datasets/IMDB-Movie-Data.csv` | `.csv` | 1,000 top movies (2006–2016) with revenue, ratings, genre, and director. |
 
 ---
 
@@ -156,7 +178,7 @@ Launch Jupyter Notebook inside your activated Conda environment:
 ```bash
 jupyter notebook
 ```
-Or open the project folder in **Visual Studio Code**, select the `hccda_ai (Python 3.12)` kernel in the top-right corner, and run the `.ipynb` notebooks interactively.
+Or open the project folder in **Visual Studio Code**, select the `hccda_ai (Python 3.12)` kernel in the top-right corner, and run any `.ipynb` notebook interactively.
 
 ---
 
