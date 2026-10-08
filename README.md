@@ -5,6 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Anaconda](https://img.shields.io/badge/Conda-Environment-44A833?style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
@@ -13,7 +14,7 @@
 
 <br/>
 
-**Hands-on Labs, Exploratory Data Analysis, Machine Learning Algorithms & Applied AI Projects**  
+**Hands-on Labs, Computer Vision, Exploratory Data Analysis, Machine Learning Algorithms & Applied AI Projects**  
 *Conducted under the NAVTTC (National Vocational and Technical Training Commission) AI Training Initiative & Huawei Certification Program.*
 
 </div>
@@ -35,10 +36,11 @@
 
 ## 📖 About the Program
 
-This repository contains all practical labs, machine learning algorithms, exploratory data analysis (EDA), data engineering pipelines, and Huawei Cloud AI preparation exercises developed during the **HCCDA - AI (Huawei Certified Developer Associate - Artificial Intelligence)** program facilitated by **NAVTTC**.
+This repository contains all practical labs, machine learning algorithms, computer vision pipelines, exploratory data analysis (EDA), and Huawei Cloud AI preparation exercises developed during the **HCCDA - AI (Huawei Certified Developer Associate - Artificial Intelligence)** program facilitated by **NAVTTC**.
 
 The curriculum is designed to build strong expertise in:
 - **Core Python Programming for Scientific Computing**
+- **Computer Vision & Image Processing with OpenCV**
 - **Multidimensional Array Operations & Vectorization with NumPy**
 - **Data Wrangling & Statistical Analysis with Pandas**
 - **Exploratory Data Analysis (EDA) & Data Visualization (Matplotlib / Seaborn)**
@@ -52,6 +54,7 @@ The curriculum is designed to build strong expertise in:
 
 - [x] Master Python data structures, algorithms, and numerical computing workflows.
 - [x] Implement mathematical operations, matrix broadcasting, 2D/3D tensor manipulation, and persistence with NumPy.
+- [x] Apply **Computer Vision techniques with OpenCV** (image transformations, filtering, color spaces, feature extraction).
 - [x] Perform end-to-end Exploratory Data Analysis on real-world datasets (Titanic, Iris, IMDB, Greenleaf Retail).
 - [x] Build and evaluate **Supervised Machine Learning Models** (Linear Regression from scratch & Scikit-Learn, Iris Classification).
 - [x] Develop modular data preprocessing and splitting pipelines (`train.csv`, `val.csv`, `test.csv`) with automated tests.
@@ -63,12 +66,21 @@ The curriculum is designed to build strong expertise in:
 
 ```text
 HCCDA_AI_NAVTTC/
+├── Computer Vision/                                    # Computer Vision & Image Processing Lab
+│   ├── OpenCV_Lab.ipynb                                # Hands-on OpenCV image manipulation & filters
+│   ├── Task.ipynb                                      # Practical computer vision tasks & exercises
+│   ├── fruit.ipynb                                     # Image classification & color detection lab
+│   ├── build_task_notebook.py                          # Notebook builder utility
+│   ├── images/                                         # Sample input and test images
+│   ├── output_results/                                 # Processed visual outputs
+│   └── resources/                                      # Lab assets and guides
 ├── 1.Linear Regression Model.ipynb                     # Supervised ML: Linear Regression (scratch & scikit-learn)
 ├── Copy_of_PythonforDS.ipynb                           # Comprehensive Python for Data Science guide
 ├── HCCDA-AI-Day-2-Lab-1.ipynb                          # HCCDA-AI Day 2 Practical Lab on AI workflows
-├── Iris Dataset/                                       # Iris Flower Classification & EDA
+├── Iris Dataset/                                       # Iris Flower Classification & Regression
 │   ├── iris_EDA_with_Training.ipynb                    # End-to-end EDA and model training pipeline
-│   └── iris_model.ipynb                                # Classification model development
+│   ├── iris_linear_regression_model.ipynb              # Linear regression applied to Iris features
+│   └── Mushtaq Ahmad.ipynb                             # Author project submission notebook
 ├── Titanic Dataset/                                    # Titanic Survival Analysis Collection
 │   ├── data/
 │   │   ├── train.csv                                   # Titanic training dataset
@@ -96,6 +108,7 @@ HCCDA_AI_NAVTTC/
 ├── list_concat.ipynb                                   # Python sequence manipulation techniques
 ├── one_to_hundred.csv                                  # Sample generated numerical dataset (CSV)
 ├── one_to_hundred.npy                                  # NumPy binary array file (.npy format)
+├── just_for_test.py                                    # Local validation script
 ├── week_2.py                                           # Week 2 introductory Python script
 ├── requirements.txt                                    # Project dependencies
 ├── .gitignore                                          # Standard Git ignore rules
@@ -106,26 +119,31 @@ HCCDA_AI_NAVTTC/
 
 ## 🔬 Modules & Project Highlights
 
-### 1. 🤖 Supervised Machine Learning (`1.Linear Regression Model.ipynb`)
+### 1. 👁️ Computer Vision with OpenCV (`Computer Vision/`)
+- **Image Operations**: Reading, displaying, resizing, cropping, and color space conversions (BGR, RGB, Grayscale, HSV).
+- **Filtering & Transformations**: Gaussian blur, edge detection (Canny, Sobel), thresholding, and morphological operations.
+- **Practical Vision Tasks**: Object recognition, mask generation, fruit detection, and image analysis.
+
+### 2. 🤖 Supervised Machine Learning (`1.Linear Regression Model.ipynb`)
 - **Linear Regression from Scratch**: Cost function ($J(\theta)$), gradient descent intuition, and manual optimization.
 - **Scikit-Learn Implementation**: Training `LinearRegression` on continuous features (House Price Prediction).
 - **Model Evaluation**: Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and $R^2$ Score.
 
-### 2. 🌸 Iris Flower Classification (`Iris Dataset/`)
+### 3. 🌸 Iris Flower Classification & Analysis (`Iris Dataset/`)
 - Multiclass classification on the classic Fisher's Iris dataset (`Sepal/Petal Length & Width`).
-- Feature distributions, pair plots, model training, accuracy evaluation, and decision boundaries.
+- Feature distributions, pair plots, regression modeling, accuracy evaluation, and decision boundaries.
 
-### 3. 🚢 Comprehensive Titanic Survival Analysis (`Titanic Dataset/`)
+### 4. 🚢 Comprehensive Titanic Survival Analysis (`Titanic Dataset/`)
 - Data cleaning & imputation: handling missing values (`Age`, `Cabin`, `Embarked`).
 - Deep-dive demographics: survival trends across `Pclass`, `Sex`, `Fare`, `SibSp`, and `Parch`.
 - Visualizations: Correlation heatmaps, survival histograms, violin and box plots.
 
-### 4. 🛒 Demand Forecasting Pipeline (`greenleaf-perishable-demand-forecast/`)
+### 5. 🛒 Demand Forecasting Pipeline (`greenleaf-perishable-demand-forecast/`)
 - Modular data pipeline: parsing raw time-series/retail transaction data (`sales_data.csv`).
 - Data partitioning: automated generation of `train.csv`, `val.csv`, and `test.csv`.
 - Test-driven validation: automated unit tests via `test_preprocessing.py`.
 
-### 5. 🔢 NumPy & Python Foundations (`complete_numpy_course_for_beginners_complete.ipynb`, etc.)
+### 6. 🔢 NumPy & Python Foundations (`complete_numpy_course_for_beginners_complete.ipynb`, etc.)
 - In-depth coverage from basic syntax to 2D/3D tensor reshaping, masking, broadcasting, and binary file I/O (`.npy`, `.csv`).
 
 ---
@@ -134,6 +152,7 @@ HCCDA_AI_NAVTTC/
 
 | Dataset | Location | Format | Description |
 |---|---|---|---|
+| **Computer Vision Images** | `Computer Vision/images/` | `.jpg`, `.jpeg` | Test images for OpenCV labs, filtering, and object detection. |
 | **Titanic Dataset** | `Titanic Dataset/data/` | `.csv`, `.xlsx` | Passenger demographics, ticket class, and survival outcome. |
 | **Iris Dataset** | `Iris Dataset/` | In-memory / `.csv` | 150 iris flower instances with 4 morphological features across 3 species. |
 | **Sales Demand Data** | `greenleaf-perishable-demand-forecast/` | `.csv` | Retail sales transactions for demand forecasting and inventory modeling. |
