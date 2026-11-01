@@ -36,6 +36,9 @@ ENV/
 *.bak
 **/*.bak
 
+# Large notebooks / excluded files
+*Zainab_Nadeem*
+
 # Huawei CodeArts / ModelArts cache
 .arts/
 **/.arts/
