@@ -31,15 +31,16 @@ ENV/
 .venv/
 
 # Jupyter Notebook checkpoints & backups
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 *.bak
+**/*.bak
 
 # Huawei CodeArts / ModelArts cache
 .arts/
+**/.arts/
 .codeartsdoer/
-*/.arts/*
-*/.codeartsdoer/*
+**/.codeartsdoer/
 
 # VS Code
 .vscode/
